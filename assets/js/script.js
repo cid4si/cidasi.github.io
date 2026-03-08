@@ -61,7 +61,7 @@ const list = document.getElementById('links-list');
       a.target = '_blank';
       a.rel = 'noopener noreferrer';
       
-      // a.style.animationDelay = `${0.3 + i * 0.06}s`; // implementar efeito fade-in 
+      a.style.animationDelay = `${0.3 + i * 0.06}s`; // efeito fade-in 
       
       a.innerHTML = `
         <img src="${link.icon}" alt="${link.name}" class="link-icon">
