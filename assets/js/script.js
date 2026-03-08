@@ -47,7 +47,7 @@ const DATA = {
   ],
 };
 
-const bioParagraph = document.querySelector("#bio p");
+const bioParagraph = document.getElementById('bio-text');
 if (bioParagraph) {
   bioParagraph.textContent = DATA.bio;
 }
