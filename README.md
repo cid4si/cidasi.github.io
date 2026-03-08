@@ -1,17 +1,8 @@
-### Estrutura
+# cidasi.me
 
-```
-assets/
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── img/
-├── fonts/
-└── favicons/
-    ├── favicon.ico
-CNAME
-index.html
-```
+This is the repository for my upcoming website.  
+Currently, the site is in the construction and development phase.
 
-> Em construção...
+---
+
+**Live:** [cidasi.me](https://cidasi.me)
