@@ -4,4 +4,4 @@
 
 ---
 
-> **Domains:** [cidasi.me](https://cidasi.me) | [www.cidasi.com.br](https://www.cidasi.com.br)
+> **Domains:** [cidasi.me](https://cidasi.me) | [cidasi.com.br](https://www.cidasi.com.br)
