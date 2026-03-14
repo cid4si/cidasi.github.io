@@ -2,54 +2,64 @@
 <html lang="pt-BR">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>{{cidasi}}</title>
+  <title>{{cidasi}}</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicons/favicon.ico">
 
-    <link rel="icon" type="image/x-icon" href="./assets/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
-    <link rel="apple-touch-icon" href="./assets/favicons/apple-icon-180x180.png">
-    <link rel="manifest" href="./assets/favicons/manifest.json">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="./assets/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="./assets/favicons/manifest.json">
 
-    <!-- CSS Principal-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- CSS Principal-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <div class="wrapper">   
+  <div class="wrapper">
     <div class="main-block">
       <header>
         <div class="brand">
-          <h1 class="name" aria-label="Ademar Cidasi">AĐΞMAR CIĐASI</h1>
+          <h1 class="name" aria-label="Ademar Cidasi">
+            <span class="reveal-wrap">
+              <span class="reveal-text">AĐΞMAR CIĐASI</span>
+            </span>
+          </h1>
         </div>
         <nav>
-          <button class="theme-toggle" id="themeBtn" title="Toggle theme">◐</button>
           <a href="https://www.behance.net/cid4si">/portifólio</a>
           <a href="#">/blog</a>
           <a href="#">/projetos</a>
+          <button class="theme-toggle" id="themeBtn" title="Toggle theme">
+            <img src="./assets/icons/lightbulb-day.svg" alt="tema" id="themeIcon" class="theme-icon">
+          </button>
         </nav>
       </header>
 
+      <section class="bio-section">
+        <p id="bio-text">
+          <span class="reveal-wrap">
+            <span class="reveal-text">fã de open source e emocore.</span><br>
+          </span>
+        </p>
+      </section>
 
-    <!-- Mini Bio -->
-    <section class="bio-section">
-      <p id="bio-text">fã de open source e emocore.</p><br>
-    </section>
+      <!-- LINKS -->
+      <section class="links-section" id="links">
+        <div class="links-list" id="links-list"></div>
+      </section>
 
-    <!-- LINKS -->
-    <section class="links-section" id="links">
-      <div class="links-list" id="links-list">
-      </div>
-    </section>
+      <!-- FOOTER -->
+      <footer>
+        <span><a href="https://github.com/cid4si/cidasi.github.io">Code </a>&nbsp;&bull;&nbsp;<a href="#">RSS Feed</a></span><br>
+        <span>&copy; 2026</span>
+      </footer>
+    </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <span><a href="#">Code&nbsp;&bull;&nbsp; RSS Feed</a></span><br>
-      <span>&copy; 2026</span>
-    </footer>
-  </div>    
-
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
