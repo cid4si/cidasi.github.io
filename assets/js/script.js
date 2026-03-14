@@ -10,7 +10,7 @@ const DATA = {
     { name: "spotify",   url: "https://open.spotify.com/playlist/3aEgtDt1LdIJnRbUy6csSh?si=OtT_HysdSiq5tAoAZGvg0w", icon: "assets/icons/spotify.svg",      platform: "spotify"   },
     { name: "last.fm",   url: "https://www.last.fm/user/cid4si",                                                       icon: "assets/icons/lastfm.svg",       platform: "lastfm"    },
     { name: "github",    url: "https://github.com/cid4si",                                                             icon: "assets/icons/github.svg",       platform: "github"    },
-    { name: "linkedin",  url: "https://www.linkedin.com/in/admrcds/",                                                  icon: "assets/icons/linkedin-in.svg",  platform: "linkedin"  },
+    // { name: "linkedin",  url: "https://www.linkedin.com/in/admrcds/",                                                  icon: "assets/icons/linkedin-in.svg",  platform: "linkedin"  },
   ],
 };
 
