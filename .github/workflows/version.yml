@@ -1,0 +1,28 @@
+name: Update Version
+
+on:
+  push:
+    tags:
+      - "v*" # dispara ao criar uma tag de versão (Ex v1.1.0)
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Pegar versão da tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Atualizar data-version no HTML
+        run: |
+          sed -i "s/data-version=\".*\"/data-version=\"${{ steps.version.outputs.VERSION }}\"/" index.html
+
+      - name: Commit e push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add index.html
+          git commit -m "chore: version ${{ steps.version.outputs.VERSION }}"
+          git push

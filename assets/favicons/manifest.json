@@ -1,7 +1,6 @@
 {
   "name": "App",
   "short_name": "App",
-  "description": "Sua descrição aqui",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
